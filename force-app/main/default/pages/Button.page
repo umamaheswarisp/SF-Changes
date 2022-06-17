@@ -1,0 +1,18 @@
+<apex:page controller="ButtonControllerSample">
+    <apex:form >
+    	<apex:commandButton action="{}" value="Click" id="theButton"/>
+         <apex:pageBlock title="Animal Details" id="contacts_list">
+            <!-- Contacts List goes here -->
+            <!--    <apex:pageBlockTable value="{! Contacts }" var="ct">
+                <apex:column value="{! ct.FirstName }"/>
+                <apex:column value="{! ct.LastName }"/>
+                <apex:column value="{! ct.Title }"/>
+                <apex:column value="{! ct.Email }"/>
+            </apex:pageBlockTable> -->
+              <apex:pageBlockTable value="{! Names}" var="obj">
+             	  <apex:column value="{! obj }"/>
+                  
+             </apex:pageBlockTable>
+        </apex:pageBlock>
+        </apex:form>
+</apex:page>

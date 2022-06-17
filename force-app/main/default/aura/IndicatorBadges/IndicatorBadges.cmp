@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome" controller="INDICATOR_Controller" access="public">
+ 
+  <aura:attribute name="AnimalVal" type="String"/>
+ <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
+  <lightning:card iconName="standard:coaching"  class="slds-text-title_caps">
+      <lightning:button variant="brand" label="Get Exchange Rate" onclick="{! c.doInit }" /> 
+    
+
+      <table border="1" width="200">
+            
+            <tr>
+              
+                <th>Name</th>
+            </tr>
+           
+                <tr>
+                   <!--<aura:iteration items="{!v.AnimalVal}"  var="animal">  -->
+                    <td>{!v.AnimalVal}</td>
+                  <!-- </aura:iteration> -->
+                </tr>
+        
+        </table>
+
+
+
+  </lightning:card>
+</aura:component>
